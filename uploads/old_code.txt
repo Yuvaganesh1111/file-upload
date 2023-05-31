@@ -1,0 +1,60 @@
+<HeroSlider className='slider'
+        slidingAnimation="left_to_right"
+        orientation="horizontal"
+        initialSlide={1}
+        onBeforeChange={(previousSlide,nextSlide)=>console.log("onBeforeChange",previousSlide,nextSlide)}
+        onChange={nextSlide=>console.log("onChange",nextSlide)}
+        onAfterChange={nextSlide=>console.log("onAfterChange",nextSlide)}
+        style={{
+            backgroundColor:"rgba(0,0,0,3.3)"
+        }}
+        settings={{
+            slidingDuration:250,
+            slidingDelay:100,
+            shouldAutoplay:true,
+            shouldDisplayButton:true,
+            autoplayDuration:5000
+
+        }}
+        >
+            <Slide
+            background={{
+                backgroundImageSrc:flip1,
+                backgroundAttachment:"fixed"
+
+            }}
+            />
+            <Slide
+            background={{
+                backgroundImageSrc:flip2,
+                backgroundAttachment:"fixed"
+
+            }}
+            />
+            <Slide
+            background={{
+                backgroundImageSrc:flip3,
+                backgroundAttachment:"fixed"
+
+            }}
+            />
+            <Slide
+            background={{
+                backgroundImageSrc:flip4,
+                backgroundAttachment:"fixed"
+
+            }}
+            />
+        </HeroSlider>
+<Slider {...settings}>
+          <div>
+            <h1>1</h1>
+          </div>
+          <div>
+            <h1>2</h1>
+          </div>
+          <div>
+            <h1>3</h1>
+          </div>
+          
+        </Slider>
